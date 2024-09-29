@@ -15,7 +15,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello World"}
+    return {"message": "Jello World"}
 
 @app.post("/upload/")
 async def upload_image(file: UploadFile = File(...)):
